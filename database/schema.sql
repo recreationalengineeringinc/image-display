@@ -7,7 +7,7 @@ USE rei_store;
 CREATE TABLE product (
   id INT NOT NULL,
   name VARCHAR(255),
-  rating INT,
+  rating DOUBLE(5,2),
   category VARCHAR(255),
   PRIMARY KEY(id)
 );
@@ -17,10 +17,18 @@ CREATE TABLE inventory (
   product_id INT,
   color VARCHAR(255),
   size VARCHAR(255),
-  price INT,
+  price DOUBLE(5,2),
   quantity INT,
   PRIMARY KEY (id),
   FOREIGN KEY (product_id) REFERENCES product(id)
+);
+
+CREATE TABLE images (
+  id INT NOT NULL AUTO_INCREMENT,
+  url VARCHAR(255),
+  description VARCHAR(255),
+  identifier VARCHAR(255),
+  PRIMARY KEY (id)
 );
 
 CREATE TABLE product_inventory_br (
@@ -32,9 +40,3 @@ CREATE TABLE product_inventory_br (
   FOREIGN KEY (image_id) REFERENCES images(id)
 );
 
-CREATE TABLE images (
-  id INT NOT NULL AUTO_INCREMENT,
-  url VARCHAR(255),
-  description VARCHAR(255),
-  PRIMARY KEY (id)
-);
