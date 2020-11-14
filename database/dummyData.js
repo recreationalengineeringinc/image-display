@@ -124,7 +124,7 @@ const dummmyData = [{
         },
         2: {
           url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/Classic+Navy/image_2.jpeg',
-          description: 'Model info: Height: 6 ft 1" | Waist: 32" | Wearing size M',
+          description: 'Model info: Height: 6 ft 1 | Waist: 32" | Wearing size M',
         },
         3: {
           url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/Classic+Navy/image_3.jpeg',

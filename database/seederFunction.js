@@ -8,7 +8,7 @@ const db = require('./connection.js');
 
 function seeder(dataset) {
   dataset.forEach(data => {
-    db.connection.query(`INSERT INTO product (id, name, rating, category) VALUES (${data.id}, '${data.name}', ${data.rating}, '${data.category}')`, (err) => {
+    db.connection.query(`INSERT INTO products (id, name, rating, category) VALUES (${data.id}, '${data.name}', ${data.rating}, '${data.category}')`, (err) => {
       if (err) {
         console.log('error logging product: ', err);
       } else {
@@ -40,17 +40,14 @@ function seeder(dataset) {
     }
     createBridge(data);
   });
-//   db.connection.end(()=>{
-//     console.log('seeding complete');
-//   });
-// }
+}
 
 function createBridge(data) {
   let inventoryIDs = [];
   let imageIDs = [];
   // establish join table
 
-  db.connection.query(`SELECT inventory.id from inventory INNER JOIN product ON inventory.product_id = product.id AND product.name = '${data.name}'`, (err, result) => {
+  db.connection.query(`SELECT inventory.id from inventory INNER JOIN products ON inventory.product_id = products.id AND products.name = '${data.name}'`, (err, result) => {
     if (err) {
       console.log(err);
     } else {
@@ -69,7 +66,7 @@ function createBridge(data) {
             imageIDs = result;
             for (let i = 0; i < inventoryIDs.length; i++) {
               for (let j = 0; j < imageIDs.length; j++) {
-                db.connection.query(`INSERT INTO product_inventory_br (inventory_id, image_id) VALUES (${inventoryIDs[i].id}, ${imageIDs[j].id})`, (err) => {
+                db.connection.query(`INSERT INTO image_inventory_br (inventory_id, image_id) VALUES (${inventoryIDs[i].id}, ${imageIDs[j].id})`, (err) => {
                   if (err) {
                     console.log(err);
                   } else {

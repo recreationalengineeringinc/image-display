@@ -4,7 +4,7 @@ CREATE DATABASE rei_store;
 
 USE rei_store;
 
-CREATE TABLE product (
+CREATE TABLE products (
   id INT NOT NULL,
   name VARCHAR(255),
   rating DOUBLE(5,2),
@@ -20,7 +20,7 @@ CREATE TABLE inventory (
   price DOUBLE(5,2),
   quantity INT,
   PRIMARY KEY (id),
-  FOREIGN KEY (product_id) REFERENCES product(id)
+  FOREIGN KEY (product_id) REFERENCES products(id)
 );
 
 CREATE TABLE images (
@@ -31,7 +31,7 @@ CREATE TABLE images (
   PRIMARY KEY (id)
 );
 
-CREATE TABLE product_inventory_br (
+CREATE TABLE image_inventory_br (
   id INT NOT NULL AUTO_INCREMENT,
   inventory_id INT,
   image_id INT,
