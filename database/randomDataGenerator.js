@@ -1,3 +1,4 @@
+/* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable no-plusplus */
 // input:
