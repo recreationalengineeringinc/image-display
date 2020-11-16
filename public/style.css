@@ -2,7 +2,7 @@ img{
   height: 150px;
   vertical-align: middle;
 }
-table, th, td {
+table, td {
   border: 1px solid black;
 }
 
@@ -30,9 +30,11 @@ td img {
 }
 
 #info {
-
-  float: left;
+  position: absolute;
+  margin-left: 700px;
+  /* float: left; */
   padding-left: 100px;
+  flex-wrap: wrap;
 }
 
 #color1{
