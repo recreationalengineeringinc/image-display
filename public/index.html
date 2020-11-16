@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <head>
-
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -9,6 +9,70 @@
   <div id="app">
     Hello World REACT NOT WORKING
   </div>
+  <div id ="photo-carousel">
+    <table>
+      <tr>
+        <td id="photo-preview"><img src='https://rei-product.s3-us-west-1.amazonaws.com/1/Dark+Inertia/image_1.jpeg' /></td>
+      </tr>
+      <tr>
+        <td id="photo-preview"><img src='https://rei-product.s3-us-west-1.amazonaws.com/1/Dark+Inertia/image_2.jpeg' /></td>
+      </tr>
+      <tr>
+        <td id="photo-preview"><img src='https://rei-product.s3-us-west-1.amazonaws.com/1/Dark+Inertia/image_3.jpeg' /></td>
+      </tr>
+      <tr>
+        <td id="photo-preview"><img src='https://rei-product.s3-us-west-1.amazonaws.com/1/Dark+Inertia/image_4.jpeg' /></td>
+      </tr>
+      <tr>
+        <td id="photo-preview"><img src='https://rei-product.s3-us-west-1.amazonaws.com/1/Dark+Inertia/image_5.jpeg' /></td>
+      </tr>
+      <tr>
+        <td id="photo-preview"><img src='https://rei-product.s3-us-west-1.amazonaws.com/1/Dark+Inertia/image_6.jpeg' /></td>
+      </tr>
+    </table>
+    <img id='main' src='https://rei-product.s3-us-west-1.amazonaws.com/1/Dark+Inertia/image_1.jpeg' />
+  </div>
+  <div id="info">
+    <h1>Arc'teryx Andessa Down Jacket - Women's</h1>
+    <div>
+      <p> Item #000001</p>
+    </div>
+    <p>$949.00</p>
+    <p><br>This item ships for FREE!</p>
+    <p>Members save 20% on one eligible full-price item with code GEARUP2020 thru 11/23.</p>
+    <button>Details</button>
+    <p><br>Color: Dark Inertia</p>
+
+    <form>
+      <label for="color1">$949.00</label><br>
+      <input type="button" class="color" id= "color1">
+    </form>
+
+    <br><br>
+
+    <form>
+      <input type="button" id="size" value="XS">
+      <input type="button" id="size" value="S">
+      <input type="button" id="size" value="M">
+      <input type="button" id="size" value="L">
+      <input type="button" id="size" value="XL">
+      <input type="button" id="size" value="XXL">
+    </form>
+
+    <br><br>
+
+    <form>
+      <label>Quantity</label><br>
+      <input type="button" id="subtract" value="-">
+      <input type="text" id="quantity">
+      <input type="button" id="subtract" value="+">
+      <br><input type="submit" value="Add to Cart">
+    </form>
+
+  </div>
+
+
   <script type="text/javascript" src="./bundle.js"></script>
+  <link rel="stylesheet" href="styles.css">
 </body>
 </html>

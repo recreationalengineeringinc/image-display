@@ -1,0 +1,46 @@
+img{
+  height: 150px;
+  vertical-align: middle;
+}
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  float: left;
+  margin-left: 80px;
+}
+
+#app{
+  margin-left: 80px;
+}
+
+td img {
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main {
+
+  float: left;
+  padding-left: 100px;
+  height: 800px;
+}
+
+#info {
+  float: left;
+  padding-left: 100px;
+}
+
+#color1{
+  background-color: #4F272E ;
+  height: 60px;
+  width: 50px;
+}
+
+#size {
+  height: 40px;
+  width: 90px;
+}
