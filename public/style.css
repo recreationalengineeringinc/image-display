@@ -8,11 +8,11 @@ table, th, td {
 
 table {
   float: left;
-  margin-left: 80px;
+  margin-left: 50px;
 }
 
 #app{
-  margin-left: 80px;
+  margin-left: 50px;
 }
 
 td img {
@@ -30,17 +30,66 @@ td img {
 }
 
 #info {
+
   float: left;
   padding-left: 100px;
 }
 
 #color1{
   background-color: #4F272E ;
-  height: 60px;
+  height: 50px;
   width: 50px;
 }
 
 #size {
   height: 40px;
   width: 90px;
+}
+
+#addCart {
+  margin-top: 5px;
+  height: 40px;
+  width: 200px;
+  background-color: #426C90;
+  color: white;
+}
+
+.blue {
+  color: #426C90;
+  font-size: x-large;
+}
+
+.red {
+  color: #CC0C00;
+  font-size: x-large;
+}
+
+#quantity {
+  width: 40px;
+  height: 30px;
+  text-align: center;
+}
+
+/* .quantity {
+  height: 25px;
+  width:25px;
+  font-size: larger;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+} */
+
+.quantity {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#quantityForm .quantity {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
 }

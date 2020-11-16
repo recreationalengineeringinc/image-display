@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
 
@@ -38,8 +38,8 @@
       <p> Item #000001</p>
     </div>
     <p>$949.00</p>
-    <p><br>This item ships for FREE!</p>
-    <p>Members save 20% on one eligible full-price item with code GEARUP2020 thru 11/23.</p>
+    <p class="blue">This item ships for FREE!</p>
+    <p class="red">Members save 20% on one eligible full-price<br>item with code GEARUP2020 thru 11/23.</p>
     <button>Details</button>
     <p><br>Color: Dark Inertia</p>
 
@@ -61,12 +61,12 @@
 
     <br><br>
 
-    <form>
+    <form id="quantityForm">
       <label>Quantity</label><br>
-      <input type="button" id="subtract" value="-">
+      <input type="button" id="subtract" class="quantity" value="-">
       <input type="text" id="quantity">
-      <input type="button" id="subtract" value="+">
-      <br><input type="submit" value="Add to Cart">
+      <input type="button" id="subtract" class="quantity" value="+">
+      <br><input type="submit" id="addCart" value="Add to Cart">
     </form>
 
   </div>
