@@ -1,0 +1,27 @@
+[{
+  id: Number, //auto
+  name: String, //faker?
+  rating: Number,
+  description: String,
+  colors: {
+    blue: { //faker
+      price: Number, //random number generator
+      images: {
+        image_1: {
+          url: String,
+          description: String
+        },
+        image_2: {
+          url: String,
+          description: String
+        }
+      },
+      sizes: {
+        xs: Number, random number generator
+        s: Number,
+        m: Number,
+        l: Number,
+        xl: Number
+      }
+    },
+}]
