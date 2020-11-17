@@ -12,13 +12,12 @@ CREATE TABLE products (
   PRIMARY KEY(id)
 );
 
-CREATE TABLE inventory (
-  id INT NOT NULL AUTO_INCREMENT,
+CREATE TABLE color (
+  id INT NOT NULL,
   product_id INT,
   color VARCHAR(255),
-  size VARCHAR(255),
-  price DOUBLE(5,2),
-  quantity INT,
+  hex VARCHAR(255),
+  price DECIMAL(10,2),
   PRIMARY KEY (id),
   FOREIGN KEY (product_id) REFERENCES products(id)
 );
@@ -27,16 +26,9 @@ CREATE TABLE images (
   id INT NOT NULL AUTO_INCREMENT,
   url VARCHAR(255),
   description VARCHAR(255),
-  identifier VARCHAR(255),
-  PRIMARY KEY (id)
+  color_id INT,
+  PRIMARY KEY (id),
+  FOREIGN KEY (color_id) REFERENCES color(id)
 );
 
-CREATE TABLE image_inventory_br (
-  id INT NOT NULL AUTO_INCREMENT,
-  inventory_id INT,
-  image_id INT,
-  PRIMARY KEY (id),
-  FOREIGN KEY (inventory_id) REFERENCES inventory(id),
-  FOREIGN KEY (image_id) REFERENCES images(id)
-);
 

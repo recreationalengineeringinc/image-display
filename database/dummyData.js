@@ -8,6 +8,7 @@ const dummmyData = [{
   category: 'clothing',
   colors: {
     'Dark Inertia': {
+      hex: '#4F272E',
       price: 949.00,
       images: {
         1: {
@@ -31,7 +32,7 @@ const dummmyData = [{
           description: 'dark inertia',
         },
         6: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/1/Dark+Inertia/image_1.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/1/Dark+Inertia/image_6.jpeg',
           description: 'dark inertia',
         },
       },
@@ -54,6 +55,7 @@ const dummmyData = [{
   category: 'clothing',
   colors: {
     Black: {
+      hex: '#272527',
       price: 249.00,
       images: {
         1: {
@@ -85,6 +87,7 @@ const dummmyData = [{
       },
     },
     'Forge Grey': {
+      hex: '#434343',
       price: 249.00,
       images: {
         1: {
@@ -116,6 +119,7 @@ const dummmyData = [{
       },
     },
     'Classic Navy': {
+      hex: '#33374C',
       price: 249.00,
       images: {
         1: {
@@ -147,6 +151,7 @@ const dummmyData = [{
       },
     },
     'Andes Blue': {
+      hex: '#146DA2',
       price: 249.00,
       images: {
         1: {
@@ -173,6 +178,7 @@ const dummmyData = [{
       },
     },
     'Coriander Brown/ River Delta': {
+      hex: '#695032',
       price: 249.00,
       images: {
         1: {
@@ -204,6 +210,7 @@ const dummmyData = [{
       },
     },
     'Kelp Forest': {
+      hex: '#474A3F',
       price: 249.00,
       images: {
         1: {
@@ -230,6 +237,7 @@ const dummmyData = [{
   category: 'tent',
   colors: {
     Black: {
+      hex: '#2E2E2E',
       price: 89.00,
       images: {
         1: {
@@ -258,6 +266,7 @@ const dummmyData = [{
   category: 'tent',
   colors: {
     'Forest Floor': {
+      hex: '#DFE4E5',
       price: 499.00,
       images: {
         1: {
@@ -298,6 +307,7 @@ const dummmyData = [{
   category: 'shoes',
   colors: {
     Ash: {
+      hex: '#575757',
       price: 94.95,
       images: {
         1: {
@@ -354,6 +364,7 @@ const dummmyData = [{
   category: 'shoes',
   colors: {
     Gray: {
+      hex: '#484A4B',
       price: 94.95,
       images: {
         1: {
@@ -402,6 +413,7 @@ const dummmyData = [{
   category: 'sleeping bags',
   colors: {
     'Blue Nights': {
+      hex: '#333746',
       price: 109.00,
       images: {
         1: {
@@ -443,6 +455,7 @@ const dummmyData = [{
   category: 'sleeping bags',
   colors: {
     'Torch/Stormy Night': {
+      hex: '#2A3345',
       price: 319.95,
       images: {
         1: {
@@ -484,6 +497,7 @@ const dummmyData = [{
   category: 'accessories',
   colors: {
     Wood: {
+      hex: '#BA8566',
       price: 899.00,
       images: {
         1: {
@@ -520,6 +534,7 @@ const dummmyData = [{
   category: 'accessories',
   colors: {
     Gray: {
+      hex: '#B7BAC3',
       price: 11.95,
       images: {
         1: {
@@ -548,6 +563,7 @@ const dummmyData = [{
       },
     },
     Seafoam: {
+      hex: '#4EC1D5',
       price: 11.95,
       images: {
         1: {
@@ -572,6 +588,7 @@ const dummmyData = [{
       },
     },
     'Slate Blue': {
+      hex: '#70CCFB',
       price: 11.95,
       images: {
         1: {
@@ -600,6 +617,7 @@ const dummmyData = [{
       },
     },
     'Trout Green': {
+      hex: '#2CC0C4',
       price: 11.95,
       images: {
         1: {

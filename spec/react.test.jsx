@@ -10,7 +10,7 @@ it('works', () => {
   const wrap = shallow(
     <App />
   );
-  expect(wrap.text()).toEqual('HELLO WORLD REACT WORKING');
+  expect(wrap.text()).toEqual('REI WEBSITE');
 });
 
 describe('color buttons should be setup correctly', () => {
@@ -24,7 +24,7 @@ describe('color buttons should be setup correctly', () => {
 
   test('expect clicking color button to change color state', () => {
     const original = wrap.prop('colorDisplayed');
-    wrap.find({id: '#color', key: 2}).stimulate('click');
+    wrap.find({id: '#color', key: 2}).simulate('click');
     expect(wrap.prop('colorDisplayed')).not.toEqual(original);
 
   });
@@ -40,7 +40,7 @@ describe('size buttons should be setup correctly', () => {
 
   test('expect clicking color button to change color state', () => {
     const original = wrap.prop('sizeSelected');
-    wrap.find({id: '#size', key: 2}).stimulate('click');
+    wrap.find({id: '#size', key: 2}).simulate('click');
     expect(wrap.prop('sizeSelected')).not.toEqual(original);
   });
 });
@@ -55,7 +55,7 @@ describe('photo preview bar should be setup correctly', () => {
 
   test('expect clicking photo preview to change photo in photo display', () => {
     const original = wrap.prop('sizeSelected');
-    wrap.find({id: '#size', key: 2}).stimulate('click');
+    wrap.find({id: '#size', key: 2}).simulate('click');
     expect(wrap.prop('sizeSelected')).not.toEqual(original);
   });
 });
@@ -65,6 +65,8 @@ describe('main display should be setup correctly', () => {
     <App />
   );
     //TO DO
-  wrap.find('#main').simulate('hover');
-  expect(wrap.prop('zoomIn')).toEqual(true);
+  test('expect hovering display image to trigger set state', () => {
+    wrap.find('#main').simulate('hover');
+    expect(wrap.prop('zoomIn')).toEqual(true);
+  });
 });

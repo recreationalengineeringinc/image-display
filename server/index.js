@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('/product/:id/images', (req, res) => {
   db.connection.query(
-    `SELECT products.*, inventory.*, images.* from images INNER JOIN image_inventory_br INNER JOIN inventory INNER JOIN products ON images.id = image_inventory_br.image_id AND image_inventory_br.inventory_id = inventory.id AND inventory.product_id = ${req.params.id} AND products.id = ${req.params.id}`, (err, result) => {
+    `SELECT products.name, products.category, products.rating, color.color, color.hex, color.price, images.url, images.description FROM products INNER JOIN color INNER JOIN images ON products.id = ${req.params.id} AND color.product_id = ${req.params.id} AND images.color_id = color.id`, (err, result) => {
       if (err) {
         res.sendStatus(404);
       } else {
