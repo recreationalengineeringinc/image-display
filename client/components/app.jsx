@@ -27,6 +27,8 @@ class App extends React.Component {
     this.getColors = this.getColors.bind(this);
     this.padID = this.padID.bind(this);
     this.addToCart = this.addToCart.bind(this);
+    this.changeImage = this.changeImage.bind(this);
+    this.changeColor = this.changeColor.bind(this);
   }
 
   componentDidMount() {
@@ -43,7 +45,6 @@ class App extends React.Component {
         id: padding + dummyData[0].id,
         rating: dummyData[0].rating,
       },
-      priceDisplayed: dummyData[0].price.toFixed(2),
       colorDisplayed: dummyData[0].color,
 
     }, () => {
@@ -56,14 +57,20 @@ class App extends React.Component {
     let imageUrls = [];
     let imageDescription = [];
     let colors = [];
+    let price;
     this.state.fullInventory.forEach(data => {
       if (data.color === color) {
         imageUrls.push(data.url);
         imageDescription.push(data.description);
       }
+      if (price === undefined) {
+        price = data.price.toFixed(2);
+      }
     });
     this.setState({
+      priceDisplayed: price,
       imagePreview: imageUrls,
+      imageDescription: imageDescription,
       mainDisplay: {
         url: imageUrls[0],
         key: 0,
@@ -106,15 +113,34 @@ class App extends React.Component {
     alert(`Zach add this to the cart:  \nitem: ${this.state.info.name}, \nProduct ID: #${this.state.info.id}, \ncolor: ${this.state.colorDisplayed}, \nquantity: ${quantity}, \nprice (per item): $${this.state.priceDisplayed}, \nsubtotal: $${subtotal}`);
   }
 
+  changeImage (key) {
+    let index = Number(key);
+    this.setState({
+      mainDisplay: {
+        key: key,
+        url: this.state.imagePreview[index],
+        description: this.state.imageDescription[index]
+      }
+    });
+  }
+
+  changeColor (key) {
+
+    this.setState({
+      colorDisplayed: this.state.colors[key]
+    }, () => {
+      this.getImagesByColor(this.state.colorDisplayed);
+    });
+  }
   render() {
     return (
       <div>
         <h1>REI WEBSITE</h1>
         <div id='body'>
-          <Image previews={this.state.imagePreview} showing={this.state.mainDisplay}/>
+          <Image previews={this.state.imagePreview} showing={this.state.mainDisplay} changeImage={this.changeImage}/>
           <div id="info">
             <Info price={this.state.priceDisplayed} info={this.state.info} color={this.state.colorDisplayed}/>
-            <Colors colors={this.state.colors} hex={this.state.colorsHex} displayedColor={this.state.colorDisplayed} prices={this.state.prices}/>
+            <Colors colors={this.state.colors} hex={this.state.colorsHex} displayedColor={this.state.colorDisplayed} prices={this.state.prices} changeColor={this.changeColor}/>
             <div />
             <Sizes category={this.state.info.category}/>
             <Checkout price={this.state.priceDisplayed} checkout={this.addToCart}/>

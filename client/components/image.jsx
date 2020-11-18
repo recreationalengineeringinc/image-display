@@ -5,7 +5,7 @@ const Image = (props) => (
   <div id='photo'>
     <table>
       {props.previews.map((url, index) => (
-        <SingleImage key={index} image={url}/>
+        <SingleImage key={index} image={url} index={index} changeImage={props.changeImage}/>
       ))}
     </table>
     <div className='main'>
