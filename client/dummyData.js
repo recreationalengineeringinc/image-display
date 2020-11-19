@@ -1,5 +1,6 @@
 export default [
   {
+    'id': 10,
     'name': 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
     'category': 'accessories',
     'rating': 4.75,
@@ -10,6 +11,7 @@ export default [
     'description': 'gray'
   },
   {
+    'id': 10,
     'name': 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
     'category': 'accessories',
     'rating': 4.75,
@@ -20,6 +22,7 @@ export default [
     'description': 'Back view (Gray)'
   },
   {
+    'id': 10,
     'name': 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
     'category': 'accessories',
     'rating': 4.75,
@@ -30,6 +33,7 @@ export default [
     'description': 'Bottle cap (Gray)'
   },
   {
+    'id': 10,
     'name': 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
     'category': 'accessories',
     'rating': 4.75,
@@ -40,6 +44,7 @@ export default [
     'description': ''
   },
   {
+    'id': 10,
     'name': 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
     'category': 'accessories',
     'rating': 4.75,
@@ -50,6 +55,7 @@ export default [
     'description': ''
   },
   {
+    'id': 10,
     'name': 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
     'category': 'accessories',
     'rating': 4.75,
@@ -60,6 +66,7 @@ export default [
     'description': 'seafoam'
   },
   {
+    'id': 10,
     'name': 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
     'category': 'accessories',
     'rating': 4.75,
@@ -70,6 +77,7 @@ export default [
     'description': 'Back view (Seafoam)'
   },
   {
+    'id': 10,
     'name': 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
     'category': 'accessories',
     'rating': 4.75,
@@ -80,6 +88,7 @@ export default [
     'description': ''
   },
   {
+    'id': 10,
     'name': 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
     'category': 'accessories',
     'rating': 4.75,
@@ -90,6 +99,7 @@ export default [
     'description': ''
   },
   {
+    'id': 10,
     'name': 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
     'category': 'accessories',
     'rating': 4.75,
@@ -100,6 +110,7 @@ export default [
     'description': 'slate blue'
   },
   {
+    'id': 10,
     'name': 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
     'category': 'accessories',
     'rating': 4.75,
@@ -110,6 +121,7 @@ export default [
     'description': 'Back view (Slate blue)'
   },
   {
+    'id': 10,
     'name': 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
     'category': 'accessories',
     'rating': 4.75,
@@ -120,6 +132,7 @@ export default [
     'description': 'Bottle cap (Slate blue)'
   },
   {
+    'id': 10,
     'name': 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
     'category': 'accessories',
     'rating': 4.75,
@@ -130,6 +143,7 @@ export default [
     'description': ''
   },
   {
+    'id': 10,
     'name': 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
     'category': 'accessories',
     'rating': 4.75,
@@ -140,6 +154,7 @@ export default [
     'description': ''
   },
   {
+    'id': 10,
     'name': 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
     'category': 'accessories',
     'rating': 4.75,
@@ -150,6 +165,7 @@ export default [
     'description': 'trout green'
   },
   {
+    'id': 10,
     'name': 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
     'category': 'accessories',
     'rating': 4.75,
@@ -160,6 +176,7 @@ export default [
     'description': 'Back view (Trout green)'
   },
   {
+    'id': 10,
     'name': 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
     'category': 'accessories',
     'rating': 4.75,
@@ -170,6 +187,7 @@ export default [
     'description': 'Bottle cap (Trout green)'
   },
   {
+    'id': 10,
     'name': 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
     'category': 'accessories',
     'rating': 4.75,
@@ -180,6 +198,7 @@ export default [
     'description': ''
   },
   {
+    'id': 10,
     'name': 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
     'category': 'accessories',
     'rating': 4.75,

@@ -18,7 +18,7 @@ describe('color buttons should be setup correctly', () => {
   const wrap = shallow(
     <App />
   );
-  test('expect number of color buttons to equal number of colors' ,() => {
+  test('expect number of color buttons to equal number of colors', () => {
     expect(wrap.find('.color')).to.have.lengthOf(colors.length);
   });
 
@@ -34,11 +34,7 @@ describe('size buttons should be setup correctly', () => {
   const wrap = shallow(
     <App />
   );
-  test('expect number of size buttons to equal number of sizes', () => {
-    expect(wrap.find('.sizes')).to.have.lengthOf(sizes.length);
-  });
-
-  test('expect clicking color button to change color state', () => {
+   test('expect clicking color button to change color state', () => {
     const original = wrap.prop('sizeSelected');
     wrap.find({id: '#size', key: 2}).simulate('click');
     expect(wrap.prop('sizeSelected')).not.toEqual(original);

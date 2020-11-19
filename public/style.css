@@ -45,11 +45,11 @@ padding-left: 80px;
   width: 600px;
 }
 
-#color{
+/* #color{
   background-color: #4F272E ;
   height: 50px;
   width: 50px;
-}
+} */
 
 #size {
   height: 40px;
@@ -93,6 +93,15 @@ padding-left: 80px;
   font-size: larger;
   border-radius: 50%;
 }
+
+.colorButton {
+  /* float: left; */
+  margin-right: 10px;
+}
+
+/* #rating {
+  float: left;
+} */
 
 /* #description {
   display: flex;
