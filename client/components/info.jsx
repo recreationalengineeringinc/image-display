@@ -10,7 +10,6 @@ const Info = (props) => (
     <p>${props.price}</p>
     <p className="blue">This item ships for FREE!</p>
     <p className="red">Members save 20% on one eligible full-price item with code GEARUP2020 thru 11/23.</p>
-    <br />
   </div>
 );
 

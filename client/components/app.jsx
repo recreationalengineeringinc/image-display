@@ -1,10 +1,11 @@
 import React from 'react';
-import Image from './image.jsx';
+import ClothingImages from './ClothingImages.jsx';
 import Info from './info.jsx';
 import Colors from './colors.jsx';
 import Sizes from './sizes.jsx';
 import Checkout from './checkout.jsx';
 import dummyData from '../dummyData.js';
+import Images from './images.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -20,7 +21,9 @@ class App extends React.Component {
       colorsHex: {},
       prices: {},
       imagePreview: [],
-      imageDescription: []
+      imageDescription: [],
+      usOrEu: undefined,
+      sizeSelected: undefined
     };
 
     this.getImagesByColor = this.getImagesByColor.bind(this);
@@ -29,12 +32,17 @@ class App extends React.Component {
     this.addToCart = this.addToCart.bind(this);
     this.changeImage = this.changeImage.bind(this);
     this.changeColor = this.changeColor.bind(this);
+    this.selectSize = this.selectSize.bind(this);
   }
 
   componentDidMount() {
     let padding = '';
     while (padding.length + dummyData[0].id.toString().length < 6) {
       padding += '0';
+    }
+    let usOrEu;
+    if (dummyData[0].category === 'shoes') {
+      usOrEu = Math.random();
     }
 
     this.setState({
@@ -46,7 +54,7 @@ class App extends React.Component {
         rating: dummyData[0].rating,
       },
       colorDisplayed: dummyData[0].color,
-
+      usOrEu: usOrEu
     }, () => {
       this.getImagesByColor(this.state.colorDisplayed);
       this.getColors();
@@ -110,7 +118,7 @@ class App extends React.Component {
   }
 
   addToCart (quantity, subtotal) {
-    alert(`Zach add this to the cart:  \nitem: ${this.state.info.name}, \nProduct ID: #${this.state.info.id}, \ncolor: ${this.state.colorDisplayed}, \nquantity: ${quantity}, \nprice (per item): $${this.state.priceDisplayed}, \nsubtotal: $${subtotal}`);
+    alert(`Zach add this to the cart:  \nitem: ${this.state.info.name}, \nProduct ID: #${this.state.info.id}, \ncolor: ${this.state.colorDisplayed}, \nsize: ${this.state.sizeSelected} \nquantity: ${quantity}, \nprice (per item): $${this.state.priceDisplayed}, \nsubtotal: $${subtotal}`);
   }
 
   changeImage (key) {
@@ -125,24 +133,33 @@ class App extends React.Component {
   }
 
   changeColor (key) {
-
     this.setState({
       colorDisplayed: this.state.colors[key]
     }, () => {
       this.getImagesByColor(this.state.colorDisplayed);
     });
   }
+  selectSize (size) {
+    console.log(size);
+    this.setState({
+      sizeSelected: size
+    });
+  }
+
   render() {
     return (
       <div>
         <h1>REI WEBSITE</h1>
         <div id='body'>
-          <Image previews={this.state.imagePreview} showing={this.state.mainDisplay} changeImage={this.changeImage}/>
+          <div id='imageComp'>
+            {this.state.info.category === 'clothing' ? <ClothingImages previews={this.state.imagePreview} showing={this.state.mainDisplay} changeImage={this.changeImage}/> : <Images previews={this.state.imagePreview} showing={this.state.mainDisplay} changeImage={this.changeImage} />}
+          </div>
+
           <div id="info">
             <Info price={this.state.priceDisplayed} info={this.state.info} color={this.state.colorDisplayed}/>
             <Colors colors={this.state.colors} hex={this.state.colorsHex} displayedColor={this.state.colorDisplayed} prices={this.state.prices} changeColor={this.changeColor}/>
             <div />
-            <Sizes category={this.state.info.category}/>
+            <Sizes sizeSelected={this.state.sizeSelected} selectSize={this.selectSize} category={this.state.info.category} usOrEu={this.state.usOrEu}/>
             <Checkout price={this.state.priceDisplayed} checkout={this.addToCart}/>
           </div>
         </div>

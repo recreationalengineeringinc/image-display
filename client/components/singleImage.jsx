@@ -1,9 +1,7 @@
 import React from 'react';
 
 const SingleImage = (props) => (
-  <tr>
-    <td id="photo-preview" onClick={() => (props.changeImage(props.index))}><img src={props.image} /></td>
-  </tr>
+  <td onClick={() => (props.changeImage(props.index))}><div id='preview-display'><img id="image-preview" src={props.image} /></div></td>
 );
 
 export default SingleImage;

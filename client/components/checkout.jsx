@@ -57,7 +57,7 @@ class Checkout extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <br /><br />
+        <br />
         <label>Quantity</label><br />
         <div id="quantityForm">
           <input type="button" id="subtract" className="quantity" value="-" onClick={this.subtract}/>
