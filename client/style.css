@@ -1,0 +1,367 @@
+input, table {
+  cursor: pointer;
+}
+#whole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0;
+  padding-top: 0;
+  margin-right: 0;
+}
+#header {
+  margin-top: 0;
+  background-color: black;
+  width: 120%;
+  display: flex;
+  justify-content: center;
+}
+#header-content {
+  width: 1005px;
+  /* border: 3px solid blue; */
+}
+/* body=========================================== */
+#body {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  /* border: 1px solid red; */
+}
+
+
+#details {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px
+}
+/* preview all =================================== */
+td {
+  border: 1px solid #DBDBDA;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+td {
+  height: 85px;
+  width: 120px;
+  overflow: hidden;
+}
+/* preview: clothing ============================= */
+#clothing-cells {
+  display:flex;
+  justify-content: center;
+  height: 120px;
+  width: 85px;
+  overflow: hidden;
+}
+#clothing-preview{
+  width: auto;
+  height: auto;
+  max-width: 83px;
+  max-height: 120px;
+}
+/* preview: other categories====================== */
+#preview-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#image-preview{
+  width: auto;
+  height: auto;
+  max-width: 118px;
+  max-height: 83px;
+}
+/* clothing images  ============================== */
+
+#clothing-image-module {
+  display: flex;
+  flex-direction: row;
+  border: 1px
+}
+.mainClothing {
+  padding-left: 2px;
+  width: 490px;
+  height: 650px;
+  text-align: center;
+  pointer-events: none;
+}
+#mainClothing {
+  max-width: 490px;
+  max-height: 650px;
+  width: auto;
+  height: auto;
+  cursor: none;
+  position: relative;
+  pointer-events: auto;
+  z-index: 1;
+}
+.image-description {
+  display: flex;
+  width: 500px;
+  height: 650px;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* other photos ================================== */
+#photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 500px;
+}
+
+#main {
+  height: auto;
+  width: auto;
+  max-width: 690px;
+  max-height: 490px;
+  /* cursor: none; */
+}
+
+/* Info section ================================== */
+#info {
+  width: 370px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#size {
+  height: 40px;
+  width: 90px;
+}
+.colorButton, #size {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.color{
+  height: 50px;
+  width: 50px;
+  border: 1px solid #b8b8b8;
+}
+#quantityForm {
+  display: flex;
+  align-items: center;
+}
+
+#quantity {
+  width: 40px;
+  height: 30px;
+  text-align: center;
+}
+
+.quantity {
+  height: 25px;
+  width:25px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: larger;
+  border-radius: 50%;
+}
+#addCart {
+  margin-top: 5px;
+  height: 40px;
+  width: 200px;
+  background-color: #426C90;
+  color: white;
+}
+
+/*fonts ====================================================*/
+@font-face {
+  font-family: Stuart;
+  font-weight: 1 999;
+  src: url("//www.rei.com/satchel/media/font-optimized/Stuart/REIStuart-VF-Web-Subset.woff2") format("woff2-variations"), url("//www.rei.com/satchel/media/font-optimized/Stuart/REIStuart-VF-Web-Subset.woff2") format("woff2"); }
+@font-face {
+  font-family: Stuart;
+  font-weight: 1 999;
+  font-style: italic;
+  src: url("//www.rei.com/satchel/media/font-optimized/Stuart/REIStuartWebItalics-VF-Web-Subset.woff2") format("woff2-variations"), url("//www.rei.com/satchel/media/font-optimized/Stuart/REIStuartWebItalics-VF-Web-Subset.woff2") format("woff2"); }
+@font-face {
+  font-family: Graphik;
+  font-weight: 1 999;
+  src: url("//www.rei.com/satchel/media/font-optimized/Graphik/Graphik-VF-Web-Subset.woff2") format("woff2-variations"), url("//www.rei.com/satchel/media/font-optimized/Graphik/Graphik-VF-Web-Subset.woff2") format("woff2"); }
+@font-face {
+  font-family: Graphik;
+  font-weight: 1 999;
+  font-style: italic;
+  src: url("//www.rei.com/satchel/media/font-optimized/Graphik/GraphikWebItalic-VF-Web-Subset.woff2") format("woff2-variations"), url("//www.rei.com/satchel/media/font-optimized/Graphik/GraphikWebItalic-VF-Web-Subset.woff2") format("woff2"); }
+
+  #app {
+    font-family: Graphik, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: -.016rem;
+    color: #292929
+  }
+
+  h1{
+    font-family: Stuart, serif;
+    font-weight: 500;
+    font-size: 28.43px;
+    text-transform: none;
+    font-stretch: normal;
+    line-height: 1.3;
+    margin-top: 0;
+    color: #2e2e2e;
+  }
+
+  #rating-ID {
+    font-size: 16px;
+  }
+  #price {
+    font-weight: 600;
+    font-size: 18px;
+    font-stretch: normal;
+    font-family: Stuart, Georgia, serif;
+  }
+  #priceForColor {
+    color: #292929;
+    font-weight: 700;
+  }
+  .blue {
+    color: #426C90;
+    font-weight: 600;
+  }
+  #blue {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #shippingText {
+    padding-left: 10px;
+  }
+  .red {
+    color: #CC0C00;
+  }
+  .alertMsg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #alertMsg{
+    padding-left: 5px;
+  }
+
+  #colors, .size, label, #size {
+    font-size: 14px;
+  }
+
+  #addCart{
+    font-size: 16px;
+  }
+
+  #rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #rating-info {
+    padding-left: 10px;
+  }
+
+  #itemID {
+    padding-left: 70px;
+  }
+
+  #subtract, #add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  /* stars ====================================== */
+  .ratings {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: #b1b1b1;
+    overflow: hidden;
+  }
+
+  .full-stars{
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #426C90;
+  }
+
+  .empty-stars:before,
+  .full-stars:before {
+    content: "\2605\2605\2605\2605\2605";
+    font-size: 14pt;
+  }
+
+  .empty-stars:before {
+    -webkit-text-stroke: 1px #848484;
+  }
+
+  .full-stars:before {
+    -webkit-text-stroke: 1px #426C90;
+  }
+
+  /* image zoom ================================== */
+
+  #zoom-cursor {
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    top: 190px;
+    left: 800px;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+
+  }
+
+  #zoomed-image {
+    position: absolute;
+  }
+
+  #zoom-clothing {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+
+    left: -40px;
+    width: 410px;
+    height: 650px;
+    overflow: hidden;
+
+  }
+
+  .greyClothing {
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+    margin-left: 0;
+    pointer-events: none;
+    width: 490px;
+    height: 650px;
+  }
+
+  #greyClothing {
+    position: absolute;
+    z-index: 2;
+  }

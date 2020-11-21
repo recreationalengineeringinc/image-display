@@ -1,26 +1,65 @@
 import React from 'react';
 import {mount, shallow} from 'enzyme';
 import App from '../client/components/app.jsx';
+import Colors from '../client/components/colorButtons/colors.jsx';
+// import dummyData from './dummyData.js';
 
-const photos = {}; //FILL THIS IN
-const colors = {}; //FILL THIS IN
-const sizes = {}; //FILL THIS IN
+let colors = ['red'];
+let hex = ['#B7BAC3'];
+let colorDisplayed = 'red';
+let prices = {
+  red: 1
+};
 
-it('works', () => {
-  const wrap = shallow(
-    <App />
-  );
-  expect(wrap.text()).toEqual('REI WEBSITE');
+describe('App renders properly', () => {
+  it('renders without crashing', () => {
+    shallow(<App />);
+  });
+
+  it('renders header', () => {
+    const wrapper = shallow(<App />);
+    const header = <h2><img class="svg-logo" src="//satchel.rei.com/media/img/header/rei-co-op-logo-white.svg" alt="Go to REI.com Home Page"></img></h2>;
+    expect(wrapper.contains(header)).toEqual(true);
+  });
+
+  it('works', () => {
+    const wrap = shallow(
+      <App />
+    );
+    expect(wrap.text()).toContain('<Images /><Info /><Colors /><Sizes /><Checkout />');
+  });
 });
+
+describe('', () => {
+  it('accepts user account props', () => {
+    const wrapper = mount(<Colors displayedColor={'red'} />);
+    expect(wrapper.props().displayedColor).toEqual('red');
+  });
+  it('contains users account email', () => {
+    const wrapper = mount(<Account user={user} />);
+    const value = wrapper.find('p').text();
+    expect(value).toEqual('david@gmail.com');
+  });
+});
+
 
 describe('color buttons should be setup correctly', () => {
 
-  const wrap = shallow(
-    <App />
+  it('Reviews state to have properties passed.', () => {
+    const wrapper = mount(<App />);
+    wrapper.setState({
+      prices: {
+        'red': 1
+      }
+    });
+    expect(wrapper.find('Colors').prop('prices')).toHaveProperty('red', 1);
+  }
+
+    // test('expect number of color buttons to equal number of colors', () => {
+
+  //   expect(wrap.render().find('.color')).prop('style').toHaveProperty('backgroundColor', '#B7BAC3');
+  // }
   );
-  test('expect number of color buttons to equal number of colors', () => {
-    expect(wrap.find('.color')).to.have.lengthOf(colors.length);
-  });
 
   test('expect clicking color button to change color state', () => {
     const original = wrap.prop('colorDisplayed');
@@ -34,7 +73,7 @@ describe('size buttons should be setup correctly', () => {
   const wrap = shallow(
     <App />
   );
-   test('expect clicking color button to change color state', () => {
+  test('expect clicking color button to change color state', () => {
     const original = wrap.prop('sizeSelected');
     wrap.find({id: '#size', key: 2}).simulate('click');
     expect(wrap.prop('sizeSelected')).not.toEqual(original);

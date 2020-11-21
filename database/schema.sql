@@ -6,6 +6,7 @@ USE rei_store;
 
 CREATE TABLE products (
   id INT NOT NULL,
+  brand VARCHAR(255),
   name VARCHAR(255),
   rating DOUBLE(5,2),
   category VARCHAR(255),

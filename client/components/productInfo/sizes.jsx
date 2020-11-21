@@ -1,13 +1,12 @@
 import React from 'react';
 
 const Sizes = (props) => {
-  let usOrEu = Math.random();
   if (props.category === 'clothing') {
     return (
       <div>
-        <br /><br />
-        <form>
-          <input type="button" id="size" value="XS" />
+        {props.sizeSelected === undefined ? <p>Size</p> : <p>Size: {props.sizeSelected}</p>}
+        <form onClick={()=>{ props.selectSize(event.target.value); }}>
+          <input type="button" id="size" value="XS"/>
           <input type="button" id="size" value="S" />
           <input type="button" id="size" value="M" />
           <input type="button" id="size" value="L" />
@@ -18,8 +17,8 @@ const Sizes = (props) => {
   } else if (props.category === 'sleeping bags') {
     return (
       <div>
-        <br /><br />
-        <form>
+        {props.sizeSelected === undefined ? <p>Size</p> : <p>Size: {props.sizeSelected}</p>}
+        <form onClick={()=>{ props.selectSize(event.target.value); }}>
           <input type="button" id="size" value="Long" />
           <input type="button" id="size" value="Regular" />
           <input type="button" id="size" value="Short" />
@@ -27,11 +26,11 @@ const Sizes = (props) => {
       </div>
     );
   } else if (props.category === 'shoes') {
-    if (usOrEu > 0.5) {
+    if (props.usOrEu > 0.5) {
       return (
         <div>
-          <br /><br />
-          <form>
+          {props.sizeSelected === undefined ? <p>Size</p> : <p>Size: {props.sizeSelected}</p>}
+          <form onClick={()=>{ props.selectSize(event.target.value); }}>
             <input type="button" id="size" value="6" />
             <input type="button" id="size" value="7" />
             <input type="button" id="size" value="7.5" />
@@ -49,8 +48,8 @@ const Sizes = (props) => {
     } else {
       return (
         <div>
-          <br /><br />
-          <form>
+          {props.sizeSelected === undefined ? <p>Size</p> : <p>Size: {props.sizeSelected}</p>}
+          <form onClick={()=>{ props.selectSize(event.target.value); }}>
             <input type="button" id="size" value="44" />
             <input type="button" id="size" value="44.5" />
             <input type="button" id="size" value="44.5" />
@@ -69,8 +68,8 @@ const Sizes = (props) => {
   } else {
     return (
       <div>
-        <br /><br />
-        <form>
+        {props.sizeSelected === undefined ? <p>Size:</p> : <p>Size: {props.sizeSelected}</p>}
+        <form onClick={()=>{ props.selectSize(event.target.value); }}>
           <input type="button" id="size" value="One-Size" />
         </form>
       </div>
