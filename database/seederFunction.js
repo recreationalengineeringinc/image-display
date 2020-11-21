@@ -8,7 +8,7 @@ const db = require('./connection.js');
 function seeder(dataset) {
   let colorid = 1;
   dataset.forEach(data => {
-    db.connection.query(`INSERT INTO products (id, name, rating, category) VALUES (${data.id}, '${data.name}', ${data.rating}, '${data.category}')`, (err) => {
+    db.connection.query(`INSERT INTO products (id, name, brand, rating, category) VALUES (${data.id}, '${data.name}', '${data.brand}',${data.rating}, '${data.category}')`, (err) => {
       if (err) {
         console.log('error logging product: ', err);
       } else {

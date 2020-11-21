@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
 class Checkout extends React.Component {
   constructor(props) {
@@ -16,16 +18,18 @@ class Checkout extends React.Component {
 
 
   subtract () {
-    if (Number(this.state.quantity) > 1) {
+    if (Number(this.state.quantity) && Number(this.state.quantity) > 1) {
       this.setState({
         quantity: this.state.quantity - 1
       });
     }
   }
   add () {
-    this.setState({
-      quantity: this.state.quantity + 1
-    });
+    if (Number(this.state.quantity)) {
+      this.setState({
+        quantity: this.state.quantity + 1
+      });
+    }
   }
 
   handleInput (event) {
@@ -51,8 +55,12 @@ class Checkout extends React.Component {
   }
   handleSubmit(event) {
     event.preventDefault();
-    const subtotal = (this.state.quantity * Number(this.props.price)).toFixed(2);
-    this.props.checkout(this.state.quantity, subtotal);
+    if (Number(this.state.quantity)) {
+      const subtotal = (this.state.quantity * Number(this.props.price)).toFixed(2);
+      this.props.checkout(this.state.quantity, subtotal);
+    } else {
+      alert('invalid quantity. Please enter a valid number');
+    }
   }
   render() {
     return (
@@ -65,7 +73,7 @@ class Checkout extends React.Component {
           <input type="button" id="subtract" className="quantity" value="+" onClick={this.add}/>
         </div>
         <div>
-          {this.state.error ?	<div style={{color: 'red'}}> Enter a quantity of 1 or more </div> : <br />}
+          {this.state.error ?	<div className='alertMsg' style={{color: 'red'}}><FontAwesomeIcon icon={faTimesCircle}/> <p id='alertMsg'>Enter a quantity of 1 or more</p> </div> : <br />}
         </div>
         {Number(this.state.quantity) ? <input type="submit" id="addCart" value={`Add to Cart - $${(this.props.price * Number(this.state.quantity)).toFixed(2)}`} /> : <input type="submit" id="addCart" value={`Add to Cart - $${this.props.price}`} />}
       </form>

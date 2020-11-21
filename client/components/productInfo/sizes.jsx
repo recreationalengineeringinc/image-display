@@ -68,7 +68,7 @@ const Sizes = (props) => {
   } else {
     return (
       <div>
-        {props.sizeSelected === undefined ? <p>Size</p> : <p>Size: {props.sizeSelected}</p>}
+        {props.sizeSelected === undefined ? <p>Size:</p> : <p>Size: {props.sizeSelected}</p>}
         <form onClick={()=>{ props.selectSize(event.target.value); }}>
           <input type="button" id="size" value="One-Size" />
         </form>

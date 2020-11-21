@@ -4,6 +4,7 @@
 const dummmyData = [{
   id: 1,
   name: 'Arcteryx Andessa Down Jacket - Womens',
+  brand: 'Arcteryx',
   rating: 3.75,
   category: 'clothing',
   colors: {
@@ -51,6 +52,7 @@ const dummmyData = [{
 {
   id: 2,
   name: 'Patagonia Nano Puff Insulated Hoddie - Mens',
+  brand: 'Patagonia',
   rating: 4.25,
   category: 'clothing',
   colors: {
@@ -233,6 +235,7 @@ const dummmyData = [{
 {
   id: 3,
   name: 'Outdoor Research Bug Bivy',
+  brand: 'Outdoor Research',
   rating: 3.75,
   category: 'tent',
   colors: {
@@ -262,6 +265,7 @@ const dummmyData = [{
 {
   id: 4,
   name: 'REI Co-op Kingdom 6 Tent',
+  brand: 'REI Co-op',
   rating: 3.5,
   category: 'tent',
   colors: {
@@ -303,6 +307,7 @@ const dummmyData = [{
 {
   id: 5,
   name: 'Black Diamond Momentum Climbing Shoes - Ash - Mens',
+  brand: 'Black Diamond',
   rating: 4.5,
   category: 'shoes',
   colors: {
@@ -360,6 +365,7 @@ const dummmyData = [{
 {
   id: 6,
   name: 'Black Diamond Momentum Vegan Climbing Shoes - Mens',
+  brand: 'Black Diamond',
   rating: 4.5,
   category: 'shoes',
   colors: {
@@ -409,6 +415,7 @@ const dummmyData = [{
 {
   id: 7,
   name: 'REI Co-op Trailbreak 20 Sleeping Bag - Mens',
+  brand: 'REI Co-op',
   rating: 4.25,
   category: 'sleeping bags',
   colors: {
@@ -451,6 +458,7 @@ const dummmyData = [{
 {
   id: 8,
   name: 'NEMO Disco 15 Sleeping Bag - Mens',
+  brand: 'NEMO',
   rating: 4.75,
   category: 'sleeping bags',
   colors: {
@@ -493,6 +501,7 @@ const dummmyData = [{
 {
   id: 9,
   name: 'Pau Hana Malibu Classic Stand Up Paddle Board with Paddle - 10-6"',
+  brand: 'Pau Hana',
   rating: 5,
   category: 'accessories',
   colors: {
@@ -530,6 +539,7 @@ const dummmyData = [{
 {
   id: 10,
   name: 'Nalgene Wide-Mouth Water Bottle - 32 fl. oz.',
+  brand: 'Nalgene',
   rating: 4.75,
   category: 'accessories',
   colors: {
