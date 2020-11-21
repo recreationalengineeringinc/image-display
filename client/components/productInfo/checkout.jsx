@@ -58,8 +58,6 @@ class Checkout extends React.Component {
     if (Number(this.state.quantity)) {
       const subtotal = (this.state.quantity * Number(this.props.price)).toFixed(2);
       this.props.checkout(this.state.quantity, subtotal);
-    } else {
-      alert('invalid quantity. Please enter a valid number');
     }
   }
   render() {
@@ -69,13 +67,13 @@ class Checkout extends React.Component {
         <label>Quantity</label><br />
         <div id="quantityForm">
           <input type="button" id="subtract" className="quantity" value="-" onClick={this.subtract}/>
-          <input type="text" id="quantity" value={this.state.quantity} onChange={this.handleInput}/>
+          <input type="text" id="quantity" style={{cursor: 'text'}}value={this.state.quantity} onChange={this.handleInput}/>
           <input type="button" id="subtract" className="quantity" value="+" onClick={this.add}/>
         </div>
         <div>
           {this.state.error ?	<div className='alertMsg' style={{color: 'red'}}><FontAwesomeIcon icon={faTimesCircle}/> <p id='alertMsg'>Enter a quantity of 1 or more</p> </div> : <br />}
         </div>
-        {Number(this.state.quantity) ? <input type="submit" id="addCart" value={`Add to Cart - $${(this.props.price * Number(this.state.quantity)).toFixed(2)}`} /> : <input type="submit" id="addCart" value={`Add to Cart - $${this.props.price}`} />}
+        {Number(this.state.quantity) ? <input type="submit" id="addCart" value={`Add to Cart - $${(this.props.price * Number(this.state.quantity)).toFixed(2)}`} /> : <input type="submit" id="addCart" value={'Add to Cart '} />}
       </form>
     );
   }

@@ -1,3 +1,6 @@
+input, table {
+  cursor: pointer;
+}
 #whole {
   display: flex;
   flex-direction: column;
@@ -25,6 +28,15 @@
   justify-content: center;
   align-items: flex-start;
   /* border: 1px solid red; */
+}
+
+
+#details {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px
 }
 /* preview all =================================== */
 td {
@@ -68,22 +80,32 @@ td {
 #clothing-image-module {
   display: flex;
   flex-direction: row;
+  border: 1px
 }
 .mainClothing {
   padding-left: 2px;
+  width: 490px;
+  height: 650px;
+  text-align: center;
+  pointer-events: none;
 }
 #mainClothing {
   max-width: 490px;
+  max-height: 650px;
   width: auto;
   height: auto;
-
   cursor: none;
+  position: relative;
+  pointer-events: auto;
+  z-index: 1;
 }
 .image-description {
   display: flex;
   width: 500px;
+  height: 650px;
   flex-direction: column;
   align-items: center;
+
 }
 
 /* other photos ================================== */
@@ -303,12 +325,14 @@ td {
 
   #zoom-cursor {
     position: absolute;
+    z-index: 2;
     background-color: white;
     top: 190px;
     left: 800px;
     width: 400px;
     height: 500px;
     overflow: hidden;
+
   }
 
   #zoomed-image {
@@ -316,25 +340,28 @@ td {
   }
 
   #zoom-clothing {
-    position: absolute;
+    position: relative;
+    z-index: 2;
     background-color: white;
-    top: 190px;
-    left: 750px;
-    width: 400px;
-    height: 682px;
+
+    left: -40px;
+    width: 410px;
+    height: 650px;
     overflow: hidden;
+
   }
 
   .greyClothing {
     overflow: hidden;
     position: absolute;
-
-    height: 683px;
-    margin-left: 120px;
-    width: 470px;
+    z-index: 2;
+    margin-left: 0;
     pointer-events: none;
+    width: 490px;
+    height: 650px;
   }
 
   #greyClothing {
     position: absolute;
+    z-index: 2;
   }

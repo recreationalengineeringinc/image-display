@@ -162,7 +162,6 @@ class App extends React.Component {
     });
   }
   selectSize (size) {
-    console.log(size);
     this.setState({
       sizeSelected: size
     });
@@ -206,17 +205,18 @@ class App extends React.Component {
           </div>
 
           <div id="info">
-            <Info price={this.state.priceDisplayed} info={this.state.info} color={this.state.colorDisplayed} icon={this.props.icon}/>
-            <Colors colors={this.state.colors} hex={this.state.colorsHex} displayedColor={this.state.colorDisplayed} prices={this.state.prices} changeColor={this.changeColor}/>
-            <div />
-            <span className='size'>
-              <Sizes sizeSelected={this.state.sizeSelected} selectSize={this.selectSize} category={this.state.info.category} usOrEu={this.state.usOrEu}/>
-            </span>
-            <Checkout price={this.state.priceDisplayed} checkout={this.addToCart}/>
+            {this.state.hover ? <div id={this.state.info.category === 'clothing' ? 'zoom-clothing' : 'zoom-cursor'}><img id='zoomed-image' src={this.state.mainDisplay.url} style={this.state.info.category === 'clothing' ? {top: (-2 * (this.state.cursor.y + ((0.516 * this.state.cursor.height) - 150))), right: ((this.state.cursor.x - ((1.4723 * this.state.cursor.width) - 84.945) ) * 2), height: (this.state.cursor.height * 2), width: (this.state.cursor.width * 2)} : {top: (-2 * (this.state.cursor.y + ((0.516 * this.state.cursor.height) - 133.74))), right: ((this.state.cursor.x - ((1.4723 * this.state.cursor.width) - 84.945) ) * 2), height: (this.state.cursor.height * 2), width: (this.state.cursor.width * 2)}}/></div> : null}
+            <div id='details'>
+              <Info price={this.state.priceDisplayed} info={this.state.info} color={this.state.colorDisplayed} icon={this.props.icon}/>
+              <Colors colors={this.state.colors} hex={this.state.colorsHex} displayedColor={this.state.colorDisplayed} prices={this.state.prices} changeColor={this.changeColor}/>
+              <div />
+              <span className='size'>
+                <Sizes sizeSelected={this.state.sizeSelected} selectSize={this.selectSize} category={this.state.info.category} usOrEu={this.state.usOrEu}/>
+              </span>
+              <Checkout price={this.state.priceDisplayed} checkout={this.addToCart}/>
+            </div>
           </div>
         </div>
-
-        {this.state.hover ? <div id={this.state.info.category === 'clothing' ? 'zoom-clothing' : 'zoom-cursor'}><img id='zoomed-image' src={this.state.mainDisplay.url} style={this.state.info.category === 'clothing' ? {top: (-2 * (this.state.cursor.y + ((0.516 * this.state.cursor.height) - 150))), right: ((this.state.cursor.x - ((1.4723 * this.state.cursor.width) - 84.945) ) * 2), height: (this.state.cursor.height * 2), width: (this.state.cursor.width * 2)} : {top: (-2 * (this.state.cursor.y + ((0.516 * this.state.cursor.height) - 133.74))), right: ((this.state.cursor.x - ((1.4723 * this.state.cursor.width) - 84.945) ) * 2), height: (this.state.cursor.height * 2), width: (this.state.cursor.width * 2)}}/></div> : null}
       </div>
     );
   }
