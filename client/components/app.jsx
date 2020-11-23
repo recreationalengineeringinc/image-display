@@ -47,7 +47,7 @@ class App extends React.Component {
   componentDidMount() {
 
     let data = [];
-    axios.get(`${window.location.pathname}images`)
+    axios.get(`/api${window.location.pathname}images`)
       .then((response) => {
         data = response.data;
 
@@ -209,10 +209,9 @@ class App extends React.Component {
             <div id='details'>
               <Info price={this.state.priceDisplayed} info={this.state.info} color={this.state.colorDisplayed} icon={this.props.icon}/>
               <Colors colors={this.state.colors} hex={this.state.colorsHex} displayedColor={this.state.colorDisplayed} prices={this.state.prices} changeColor={this.changeColor}/>
-              <div />
-              <span className='size'>
+              <div className='size'>
                 <Sizes sizeSelected={this.state.sizeSelected} selectSize={this.selectSize} category={this.state.info.category} usOrEu={this.state.usOrEu}/>
-              </span>
+              </div>
               <Checkout price={this.state.priceDisplayed} checkout={this.addToCart}/>
             </div>
           </div>
