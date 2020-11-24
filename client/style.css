@@ -1,3 +1,8 @@
+body {
+
+  overflow: auto;
+  width: 1020px;
+}
 input, table {
   cursor: pointer;
 }
@@ -37,7 +42,8 @@ input, table {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 370px
+  width: 370px;
+
 }
 /* preview all =================================== */
 td {
@@ -141,6 +147,7 @@ td {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
+
 }
 
 #size {

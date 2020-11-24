@@ -47,7 +47,7 @@ class App extends React.Component {
   componentDidMount() {
 
     let data = [];
-    axios.get(`/api${window.location.pathname}images`)
+    axios.get(`${window.location.pathname}images`)
       .then((response) => {
         data = response.data;
 
@@ -194,11 +194,11 @@ class App extends React.Component {
   render() {
     return (
       <div id='whole'>
-        <div id='header'>
+        {/* <div id='header'>
           <div id='header-content' style={this.state.info.category === 'clothing' ? {width: '1005px'} : {width: '1167px'}}>
             <h2><img class="svg-logo" src="//satchel.rei.com/media/img/header/rei-co-op-logo-white.svg" alt="Go to REI.com Home Page"></img></h2>
           </div>
-        </div>
+        </div> */}
         <div id='body'>
           <div id='imageComp'>
             {this.state.info.category === 'clothing' ? <ClothingImages previews={this.state.imagePreview} showing={this.state.mainDisplay} changeImage={this.changeImage} hoverState={this.state.hover} mousePosition={this.state.cursor} hover={this.handleMouseOver} hoverOut={this.handleMouseOut} hoverIn={this.handleMouseIn}/> : <Images previews={this.state.imagePreview} showing={this.state.mainDisplay} changeImage={this.changeImage} hoverState ={this.state.hover} hoverIn={this.handleMouseIn} hoverOut={this.handleMouseOut} hover={this.handleMouseOver}/>}
@@ -212,7 +212,7 @@ class App extends React.Component {
               <div className='size'>
                 <Sizes sizeSelected={this.state.sizeSelected} selectSize={this.selectSize} category={this.state.info.category} usOrEu={this.state.usOrEu}/>
               </div>
-              <Checkout price={this.state.priceDisplayed} checkout={this.addToCart}/>
+              {/* <Checkout price={this.state.priceDisplayed} checkout={this.addToCart}/> */}
             </div>
           </div>
         </div>
