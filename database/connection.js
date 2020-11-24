@@ -1,7 +1,7 @@
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
-  host: '172.31.25.67',
+  // host: 'localhost',
   user: 'root',
   password: 'password',
   database: 'rei_store',
