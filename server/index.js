@@ -8,7 +8,7 @@ const port = 3001;
 
 app.use(bodyParser.json());
 
-app.use('*/img-display', express.static(path.join(__dirname, '../public')));
+app.use('*img-display', express.static(path.join(__dirname, '../public')));
 
 app.get('*/product/:id/*images', (req, res) => {
   db.connection.query(
