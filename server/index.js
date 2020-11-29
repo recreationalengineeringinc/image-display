@@ -1,11 +1,12 @@
 const express = require('express');
 const path = require('path');
 const db = require('../database/connection.js');
-
+const compression = require('compression');
 const bodyParser = require('body-parser');
 const app = express();
 const port = 3001;
 
+app.use(compression());
 app.use(bodyParser.json());
 
 app.use('*img-display', express.static(path.join(__dirname, '../public')));
