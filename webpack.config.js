@@ -3,7 +3,6 @@ var CLIENT_DIR = path.join(__dirname, '/client');
 var PUBLIC_DIR = path.join(__dirname, '/public');
 
 module.exports = {
-  mode: 'development',
   entry: `${CLIENT_DIR}/index.jsx`,
   output: {
     filename: 'bundle.js',
@@ -24,15 +23,6 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(png|jp(e*)g|svg|gif)$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: 'images/[hash]-[name].[ext]',
-          },
-        },
       },
     ],
   },
