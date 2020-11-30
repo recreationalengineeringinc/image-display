@@ -1,7 +1,11 @@
 body {
-
   overflow: auto;
   /* width: 1020px; */
+}
+#image-display {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 input, table {
   cursor: pointer;
