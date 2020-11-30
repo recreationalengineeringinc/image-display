@@ -3,6 +3,7 @@ var CLIENT_DIR = path.join(__dirname, '/client');
 var PUBLIC_DIR = path.join(__dirname, '/public');
 
 module.exports = {
+  mode: 'production',
   entry: `${CLIENT_DIR}/index.jsx`,
   output: {
     filename: 'bundle.js',
