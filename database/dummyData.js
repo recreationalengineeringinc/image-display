@@ -13,27 +13,27 @@ const dummmyData = [{
       price: 949.00,
       images: {
         1: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/1/Dark+Inertia/image_1.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/1/DarkInertia/image_1.jpeg',
           description: 'dark inertia',
         },
         2: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/1/Dark+Inertia/image_2.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/1/DarkInertia/image_2.jpeg',
           description: 'dark inertia',
         },
         3: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/1/Dark+Inertia/image_3.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/1/DarkInertia/image_3.jpeg',
           description: 'dark inertia',
         },
         4: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/1/Dark+Inertia/image_4.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/1/DarkInertia/image_4.jpeg',
           description: 'dark inertia',
         },
         5: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/1/Dark+Inertia/image_5.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/1/DarkInertia/image_5.jpeg',
           description: 'dark inertia',
         },
         6: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/1/Dark+Inertia/image_6.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/1/DarkInertia/image_6.jpeg',
           description: 'dark inertia',
         },
       },
@@ -93,20 +93,20 @@ const dummmyData = [{
       price: 249.00,
       images: {
         1: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/Forge+Grey/image_1.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/ForgeGrey/image_1.jpeg',
           description: 'forge grey',
         },
         2: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/Forge+Grey/image_2.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/ForgeGrey/image_2.jpeg',
           description: 'forge grey',
         },
         3: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/Forge+Grey/image_3.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/ForgeGrey/image_3.jpeg',
           description: 'forge grey',
         },
 
         4: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/Forge+Grey/image_4.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/ForgeGrey/image_4.jpeg',
           description: 'forge grey',
         },
       },
@@ -125,20 +125,20 @@ const dummmyData = [{
       price: 249.00,
       images: {
         1: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/Classic+Navy/image_1.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/ClassicNavy/image_1.jpeg',
           description: 'Model info: Height: 6 ft 1 | Waist: 32" | Wearing size M',
         },
         2: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/Classic+Navy/image_2.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/ClassicNavy/image_2.jpeg',
           description: 'Model info: Height: 6 ft 1 | Waist: 32" | Wearing size M',
         },
         3: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/Classic+Navy/image_3.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/ClassicNavy/image_3.jpeg',
           description: 'classic navy',
         },
 
         4: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/Classic+Navy/image_4.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/ClassicNavy/image_4.jpeg',
           description: 'classic navy',
         },
       },
@@ -157,15 +157,15 @@ const dummmyData = [{
       price: 249.00,
       images: {
         1: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/Andes+Blue/image_1.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/AndesBlue/image_1.jpeg',
           description: 'andes blue',
         },
         2: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/Andes+Blue/image_2.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/AndesBlue/image_2.jpeg',
           description: 'andes blue',
         },
         3: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/Andes+Blue/image_3.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/AndesBlue/image_3.jpeg',
           description: 'andes blue',
         },
       },
@@ -184,20 +184,20 @@ const dummmyData = [{
       price: 249.00,
       images: {
         1: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/Coriander+Brown%3A+River+Delta/image_1.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/CorianderBrownRiverDelta/image_1.jpeg',
           description: 'coriander brown/river delta',
         },
         2: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/Coriander+Brown%3A+River+Delta/image_2.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/CorianderBrown%RiverDelta/image_2.jpeg',
           description: 'coriander brown/river delta',
         },
         3: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/Coriander+Brown%3A+River+Delta/image_3.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/CorianderBrownRiverDelta/image_3.jpeg',
           description: 'coriander brown/river delta',
         },
 
         4: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/Coriander+Brown%3A+River+Delta/image_4.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/CorianderBrownRiverDelta/image_4.jpeg',
           description: 'coriander brown/river delta',
         },
       },
@@ -216,7 +216,7 @@ const dummmyData = [{
       price: 249.00,
       images: {
         1: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/Kelp+Forest/image_1.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/2/KelpForest/image_1.jpeg',
           description: 'kelp forest',
         },
       },
@@ -274,27 +274,27 @@ const dummmyData = [{
       price: 499.00,
       images: {
         1: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/4/Forest+Floor/image_1.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/4/ForestFloor/image_1.jpeg',
           description: '3/4 front view no fly (Forest Floor)',
         },
         2: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/4/Forest+Floor/image_2.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/4/ForestFloor/image_2.jpeg',
           description: '3/4 rear view no rainfly (Forest Floor)',
         },
         3: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/4/Forest+Floor/image_3.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/4/ForestFloor/image_3.jpeg',
           description: 'Straight on fly off (Forest Floor)',
         },
         4: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/4/Forest+Floor/image_4.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/4/ForestFloor/image_4.jpeg',
           description: '3/4 rear view with rainfly (Forest Floor)',
         },
         5: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/4/Forest+Floor/image_5.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/4/ForestFloor/image_5.jpeg',
           description: 'forest floor',
         },
         6: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/4/Forest+Floor/image_6.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/4/ForestFloor/image_6.jpeg',
           description: 'Vestibule open (Forest Floor)',
         },
       },
@@ -424,27 +424,27 @@ const dummmyData = [{
       price: 109.00,
       images: {
         1: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/7/Blue+Nights/image_1.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/7/BlueNights/image_1.jpeg',
           description: 'blue nights',
         },
         2: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/7/Blue+Nights/image_2.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/7/BlueNights/image_2.jpeg',
           description: 'Stuff sack (32oz. water bottle sold separately) (Blue Nights)',
         },
         3: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/7/Blue+Nights/image_3.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/7/BlueNights/image_3.jpeg',
           description: '? head view (Blue Nights)',
         },
         4: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/7/Blue+Nights/image_4.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/7/BlueNights/image_4.jpeg',
           description: '? foot view (Blue Nights)',
         },
         5: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/7/Blue+Nights/image_5.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/7/BlueNights/image_5.jpeg',
           description: 'Zipper detail (Blue Nights)',
         },
         6: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/7/Blue+Nights/image_6.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/7/BlueNights/image_6.jpeg',
           description: 'Hood detail (Blue Nights)',
         },
       },
@@ -467,27 +467,27 @@ const dummmyData = [{
       price: 319.95,
       images: {
         1: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/8/Torch%3AStormy+Night/image_1.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/8/TorchStormyNight/image_1.jpeg',
           description: 'torch/ stormy night',
         },
         2: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/8/Torch%3AStormy+Night/image_2.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/8/TorchStormyNight/image_2.jpeg',
           description: 'Interior head (Torch/Stormy Night)',
         },
         3: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/8/Torch%3AStormy+Night/image_3.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/8/TorchStormyNight/image_3.jpeg',
           description: 'Hood with zipper (Torch/Stormy Night)',
         },
         4: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/8/Torch%3AStormy+Night/image_4.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/8/TorchStormyNight/image_4.jpeg',
           description: 'Zipped (Torch/Stormy Night)',
         },
         5: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/8/Torch%3AStormy+Night/image_5.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/8/TorchStormyNight/image_5.jpeg',
           description: 'Zipper plow (Torch/Stormy Night)',
         },
         6: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/8/Torch%3AStormy+Night/image_6.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/8/TorchStormyNight/image_6.jpeg',
           description: 'Neck blanket (Torch/Stormy Night)',
         },
       },
@@ -602,23 +602,23 @@ const dummmyData = [{
       price: 11.95,
       images: {
         1: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/Slate+Blue/image_1.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/SlateBlue/image_1.jpeg',
           description: 'slate blue',
         },
         2: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/Slate+Blue/image_2.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/SlateBlue/image_2.jpeg',
           description: 'Back view (Slate blue)',
         },
         3: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/Slate+Blue/image_3.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/SlateBlue/image_3.jpeg',
           description: 'Bottle cap (Slate blue)',
         },
         4: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/Slate+Blue/image_4.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/SlateBlue/image_4.jpeg',
           description: '',
         },
         5: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/Slate+Blue/image_5.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/SlateBlue/image_5.jpeg',
           description: '',
         },
       },
@@ -631,23 +631,23 @@ const dummmyData = [{
       price: 11.95,
       images: {
         1: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/Trout+Green/image_1.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/TroutGreen/image_1.jpeg',
           description: 'trout green',
         },
         2: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/Trout+Green/image_2.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/TroutGreen/image_2.jpeg',
           description: 'Back view (Trout green)',
         },
         3: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/Trout+Green/image_3.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/TroutGreen/image_3.jpeg',
           description: 'Bottle cap (Trout green)',
         },
         4: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/Trout+Green/image_4.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/TroutGreen/image_4.jpeg',
           description: '',
         },
         5: {
-          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/Trout+Green/image_5.jpeg',
+          url: 'https://rei-product.s3-us-west-1.amazonaws.com/10/TroutGreen/image_5.jpeg',
           description: '',
         },
       },
